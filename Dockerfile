@@ -1,0 +1,9 @@
+FROM python:3.8-slim
+
+ENV CONTAINER_HOME=/var/www
+ENV SECRET_KEY="Upad_Ash_8949"
+
+ADD . $CONTAINER_HOME
+WORKDIR $CONTAINER_HOME
+
+RUN pip install -r $CONTAINER_HOME/requirements.txt

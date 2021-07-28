@@ -1,0 +1,7 @@
+numpy
+tensorflow
+tensorflow-hub
+Flask
+gunicorn
+Werkzeug
+Pillow

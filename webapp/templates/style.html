@@ -1,0 +1,32 @@
+{% extends 'header.html' %}
+{% block content %}
+<div class="row" style="text-align: center; vertical-align: middle;">
+    <div class="col-md-3 d-flex align-items-stretch">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top h-100" src="/static/images/{{content_image}}">
+            <div class="card-body">
+                <h5 class="card-title text-uppercase text-primary">Content Image</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 d-flex align-items-stretch offset-md-1">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top h-100" src="/static/images/{{style_image}}">
+            <div class="card-body">
+                <h5 class="card-title text-uppercase text-danger">Style Image</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-3 d-flex align-items-stretch offset-md-1">
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top h-100" src="/static/images/style_photo.png">
+            <div class="card-body">
+                <h5 class="card-title text-uppercase text-success">Resulted Image</h5>
+                <a href="/download" class="btn btn-primary">Download</a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
